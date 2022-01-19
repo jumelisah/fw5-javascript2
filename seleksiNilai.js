@@ -4,7 +4,7 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray){
             if(typeof dataArray==="object"){
                 if(dataArray.length>=5){
                     let hasil = dataArray.filter(function(idx){return idx >= nilaiAwal && idx<= nilaiAkhir})
-                    hasil.sort(function(a,b){return a-b})
+                    hasil.sort((a,b) => {return a-b})
                     return hasil
                 }else{
                     return "Jumlah angka dalam dataArray harus lebih dari 5"
