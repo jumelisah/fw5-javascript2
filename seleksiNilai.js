@@ -19,5 +19,6 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray){
         return "Data harus number"
     }
 }
+
 let nilai = [2, 25, 4, 14, 17, 30, 8]
 console.log(seleksiNilai(5, 20 , nilai))
