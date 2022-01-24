@@ -17,7 +17,11 @@ function searchName(keywords, dataMax, callback){
         nameList.pop() //Mengurangi data dari index terakhir array
         i++
     }
-    return nameList
+    if(nameList.length>0){
+        return nameList
+    }else{
+        return "Tidak ada nama yang sesuai"
+    }
 }
 
 function searching(key, arrNames){
